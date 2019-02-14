@@ -11,8 +11,6 @@ public class Nombre {
 		{
 			Scanner sc = new Scanner(System.in);
 
-			//Contenu de votre classe
-
 			try{
 				System.out.println("Entrez un nombre entre 1 et 100 ?");
 				int str= sc.nextInt();
