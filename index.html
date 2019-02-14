@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>hack</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<button class="continue"></button>
+		<p id="text"></p>
+		<script>
+		window.onbeforeunload = function(){
+		return 1;
+	};
+	var i=0;
+	$( "button.continue" ).on("click", function(){
+		i++;
+		alert('vous avez cliqué '+ i +' fois !');
+	} ).html("cliquez moi !");
+	$("#text").html("Bonne nuit les petits !").css("color","red").css("background","yellow");
+	setInterval($("#text").fadeOut("slow",function(){
+		$(this).fadeIn("slow");
+	}),1000);
+	
+</script>
+		</script>
+	</body>
+
+
+</html>
