@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:PapyrusJava="http://www.eclipse.org/papyrus/PapyrusJava/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_EUqocDT4EemDDPgSiQRulA" name="peoples">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_Efuo8DT4EemDDPgSiQRulA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_mgfYkDT4EemDDPgSiQRulA" name="convertir">
+      <packagedElement xmi:type="uml:Package" xmi:id="_mlLrUDT4EemDDPgSiQRulA" name="co">
+        <packagedElement xmi:type="uml:Package" xmi:id="_mlMSYDT4EemDDPgSiQRulA" name="simplon">
+          <packagedElement xmi:type="uml:Package" xmi:id="_mlM5cDT4EemDDPgSiQRulA" name="peoples">
+            <packagedElement xmi:type="uml:Class" xmi:id="_mlPVsDT4EemDDPgSiQRulA" name="Personne" visibility="public">
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_mqvgwDT4EemDDPgSiQRulA" name="nom" visibility="public" type="_mlWqcDT4EemDDPgSiQRulA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_mqwu4DT4EemDDPgSiQRulA" name="prenom" visibility="public" type="_mlWqcDT4EemDDPgSiQRulA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_mrHUMDT4EemDDPgSiQRulA" name="age" visibility="public" isUnique="false">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_mrK-kDT4EemDDPgSiQRulA" name="adresse" visibility="public" type="_mlWqcDT4EemDDPgSiQRulA" isUnique="false"/>
+              <ownedAttribute xmi:type="uml:Property" xmi:id="_mrd5gDT4EemDDPgSiQRulA" name="VilleNaissance" visibility="public" type="_mrSTUDT4EemDDPgSiQRulA" isUnique="false"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mrtxIDT4EemDDPgSiQRulA" name="Personne" specification="_mrgVwDT4EemDDPgSiQRulA">
+                <language>JAVA</language>
+                <body>
+    this.nom = &quot;rien&quot;;
+    this.prenom = &quot;rien&quot;;
+    this.age = 0;
+    this.adresse = &quot;nule part&quot;;
+    this.VilleNaissance = new Ville();
+</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_msE9gDT4EemDDPgSiQRulA" name="Personne" specification="_mrypoDT4EemDDPgSiQRulA">
+                <language>JAVA</language>
+                <body>
+    this.nom = nom;
+    this.prenom = prenom;
+    this.age = age;
+    this.adresse = adresse;
+    this.VilleNaissance = new Ville(VilleNom, villePays, villeNbHabitants);
+</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_msU1IDT4EemDDPgSiQRulA" name="Personne" specification="_msGysDT4EemDDPgSiQRulA">
+                <language>JAVA</language>
+                <body>
+    this.nom = nom;
+    this.prenom = prenom;
+    this.age = age;
+    this.adresse = adresse;
+    this.VilleNaissance = ville;
+</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_msX4cDT4EemDDPgSiQRulA" name="toString" specification="_msVcMDT4EemDDPgSiQRulA">
+                <language>JAVA</language>
+                <body>
+    return this.nom + &quot; &quot; + this.prenom + &quot; &quot; + this.age + &quot; &quot; + this.adresse + &quot; &quot; + this.VilleNaissance.nom + &quot; &quot; + this.VilleNaissance.pays + &quot; &quot; + this.VilleNaissance.nbHabitants;
+</body>
+              </ownedBehavior>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_mrgVwDT4EemDDPgSiQRulA" name="Personne" visibility="public" method="_mrtxIDT4EemDDPgSiQRulA"/>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_mrypoDT4EemDDPgSiQRulA" name="Personne" visibility="public" method="_msE9gDT4EemDDPgSiQRulA">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_mr7zkDT4EemDDPgSiQRulA" name="nom" type="_mlWqcDT4EemDDPgSiQRulA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_mr8aoDT4EemDDPgSiQRulA" name="prenom" type="_mlWqcDT4EemDDPgSiQRulA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_mr9owDT4EemDDPgSiQRulA" name="age">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                </ownedParameter>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_mr-P0DT4EemDDPgSiQRulA" name="adresse" type="_mlWqcDT4EemDDPgSiQRulA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_mr_d8DT4EemDDPgSiQRulA" name="VilleNom" type="_mlWqcDT4EemDDPgSiQRulA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_msDIUDT4EemDDPgSiQRulA" name="villePays" type="_mlWqcDT4EemDDPgSiQRulA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_msEWcDT4EemDDPgSiQRulA" name="villeNbHabitants">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_msGysDT4EemDDPgSiQRulA" name="Personne" visibility="public" method="_msU1IDT4EemDDPgSiQRulA">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_msOHcDT4EemDDPgSiQRulA" name="nom" type="_mlWqcDT4EemDDPgSiQRulA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_msP8oDT4EemDDPgSiQRulA" name="prenom" type="_mlWqcDT4EemDDPgSiQRulA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_msSY4DT4EemDDPgSiQRulA" name="age">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+                </ownedParameter>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_msS_8DT4EemDDPgSiQRulA" name="adresse" type="_mlWqcDT4EemDDPgSiQRulA"/>
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_msUOEDT4EemDDPgSiQRulA" name="ville" type="_mrSTUDT4EemDDPgSiQRulA"/>
+              </ownedOperation>
+              <ownedOperation xmi:type="uml:Operation" xmi:id="_msVcMDT4EemDDPgSiQRulA" name="toString" visibility="public" method="_msX4cDT4EemDDPgSiQRulA">
+                <ownedParameter xmi:type="uml:Parameter" xmi:id="_msXRYDT4EemDDPgSiQRulA" type="_mlWqcDT4EemDDPgSiQRulA" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_mlRK4DT4EemDDPgSiQRulA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_mlU1QDT4EemDDPgSiQRulA" name="java">
+        <packagedElement xmi:type="uml:Package" xmi:id="_mlWDYDT4EemDDPgSiQRulA" name="lang">
+          <packagedElement xmi:type="uml:Class" xmi:id="_mlWqcDT4EemDDPgSiQRulA" name="String"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_mrNa0DT4EemDDPgSiQRulA" name="importedTypes">
+      <packagedElement xmi:type="uml:Package" xmi:id="_mrOo8DT4EemDDPgSiQRulA" name="co">
+        <packagedElement xmi:type="uml:Package" xmi:id="_mrPQADT4EemDDPgSiQRulA" name="simplon">
+          <packagedElement xmi:type="uml:Package" xmi:id="_mrQeIDT4EemDDPgSiQRulA" name="towns">
+            <packagedElement xmi:type="uml:Class" xmi:id="_mrSTUDT4EemDDPgSiQRulA" name="Ville"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mjDkYDT4EemDDPgSiQRulA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mjGnsDT4EemDDPgSiQRulA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mkcrgDT4EemDDPgSiQRulA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mkjZMDT4EemDDPgSiQRulA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Codegen/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mkknUDT4EemDDPgSiQRulA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mkmcgDT4EemDDPgSiQRulA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <PapyrusJava:External xmi:id="_mqozEDT4EemDDPgSiQRulA" name="java.lang.String" base_Classifier="_mlWqcDT4EemDDPgSiQRulA"/>
+  <PapyrusJava:External xmi:id="_mrcrYDT4EemDDPgSiQRulA" name="co.simplon.towns.Ville" base_Classifier="_mrSTUDT4EemDDPgSiQRulA"/>
+  <standard:Create xmi:id="_mrnqgDT4EemDDPgSiQRulA" base_BehavioralFeature="_mrgVwDT4EemDDPgSiQRulA"/>
+  <standard:Create xmi:id="_mr5-YDT4EemDDPgSiQRulA" base_BehavioralFeature="_mrypoDT4EemDDPgSiQRulA"/>
+  <standard:Create xmi:id="_msMSQDT4EemDDPgSiQRulA" base_BehavioralFeature="_msGysDT4EemDDPgSiQRulA"/>
+</xmi:XMI>

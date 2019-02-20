@@ -7,7 +7,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		ArrayList<Employe> employers=new ArrayList<Employe>();
-		//Iterator<Employe> iti = employers.iterator();
+		
 		Employe p=new Employe();
 		Ville v1=new Ville("Londre","Angleterre",2000);
 		Ville v2=new Ville("Paris","France",4000);
@@ -22,11 +22,11 @@ public class Test {
 		employers.add(new Employe("Michael","Callery",35,"3 street of the London ",v3,"Amazon",7000));
 		employers.add(new Employe("Michael","Jackson",90,"3 street of the London ",v3,"France2",3000));
 		employers.add(new Employe("Edward","Snodwen",50,"3 street of the London ",v3,"NSA",8000));
-		//Employe[] employers= {p1,p2,p3,p4,p5,p6,p7,p8,p9,p10};
+		
 		int i=0;
 		Iterator it = employers.iterator(); 
 		 while(it.hasNext()) {
-			//Employe s = it.next();
+		
 			System.out.println(it.next());
 			
 			
